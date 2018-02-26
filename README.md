@@ -1,2 +1,6 @@
 # dispositivos_moveis
-Repositório para a materia de dispositivos moveis
+
+## Informações complementares:
+
+Estamos utilizando Slack para controle das atualizações, link:
+### https://fatecsjc-android.slack.com/
