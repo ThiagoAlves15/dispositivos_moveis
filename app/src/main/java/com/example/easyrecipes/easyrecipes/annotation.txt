@@ -1,0 +1,47 @@
+
+
+tirar imagem do layout
+    content_recipe (nao funcionou a redimensao)
+
+
+no HomeActivity, ao trocar FakeConnection por MyConnection  ->  resultado de calculo de nova dimensao deu numero negativo
+    E/AndroidRuntime: FATAL EXCEPTION: main
+                      Process: com.example.easyrecipes.easyrecipes, PID: 2189
+                      java.lang.IllegalArgumentException: width and height must be > 0
+                          at android.graphics.Bitmap.createBitmap(Bitmap.java:893)
+                          at android.graphics.Bitmap.createBitmap(Bitmap.java:872)
+                          at android.graphics.Bitmap.createBitmap(Bitmap.java:803)
+                          at android.graphics.Bitmap.createScaledBitmap(Bitmap.java:679)
+                          at com.example.easyrecipes.easyrecipes.model.DownloadImageTask.onPostExecute(DownloadImageTask.java:45)
+                          at com.example.easyrecipes.easyrecipes.model.DownloadImageTask.onPostExecute(DownloadImageTask.java:13)
+                          at android.os.AsyncTask.finish(AsyncTask.java:660)
+                          at android.os.AsyncTask.-wrap1(AsyncTask.java)
+                          at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:677)
+                          at android.os.Handler.dispatchMessage(Handler.java:110)
+                          at android.os.Looper.loop(Looper.java:208)
+                          at android.app.ActivityThread.main(ActivityThread.java:6267)
+                          at java.lang.reflect.Method.invoke(Native Method)
+                          at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1063)
+                          at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:924)
+
+problema talvez esteja em MyConnection, na hora de coletar informações
+
+
+
+https://img.itdg.com.br/tdg/images/recipes/000/121/412/177581/177581_original.jpg?  mode=  crop&width=&height=?  mode=  crop&width=340&height=210
+
+split by mode=, get last
+
+
+https://img.itdg.com.br/tdg/images/recipes/000/190/267/272890/272890_original.jpg?  mode=  crop&width=100&height=75
+
+
+String[] split1 = split("mode=");
+String[] split2 = split1[split1.length-1].split("&")
+String sWidth = split2[1]
+String sHeight = split2[2]
+int width = sWidth.split("=")[1];
+int height = sHeight.split("=")[1];
+
+width = Integer.parseInt(imgUrl.split("&")[1].split("=")[1]);
+height = Integer.parseInt(imgUrl.split("&")[2].split("=")[1]);

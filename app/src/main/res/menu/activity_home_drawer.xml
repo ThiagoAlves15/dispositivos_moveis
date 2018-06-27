@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bolo_tortas"
+            android:title="@string/bolo_e_tortas" />
+        <item
+            android:id="@+id/nav_carnes"
+            android:title="@string/carnes" />
+        <item
+            android:id="@+id/nav_aves"
+            android:title="@string/aves" />
+        <item
+            android:id="@+id/nav_peixes_frutos_mar"
+            android:title="@string/peixes_e_frutos_do_mar"/>
+        <item
+            android:id="@+id/nav_saladas_molhos"
+            android:title="@string/saladas_e_molhos" />
+        <item
+            android:id="@+id/nav_sopas"
+            android:title="@string/sopas"/>
+        <item
+            android:id="@+id/nav_massas"
+            android:title="@string/massas"/>
+        <item
+            android:id="@+id/nav_bebidas"
+            android:title="@string/bebidas"/>
+        <item
+            android:id="@+id/nav_doces_sobremesas"
+            android:title="@string/doces_sobremesas"/>
+        <item
+            android:id="@+id/nav_lanches"
+            android:title="@string/lanches" />
+        <item
+            android:id="@+id/nav_alimentacao_saudavel"
+            android:title="@string/alimentacao_saudavel"/>
+        <item
+            android:id="@+id/nav_localizacao"
+            android:title="@string/localizacao" />
+    </group>
+
+</menu>
