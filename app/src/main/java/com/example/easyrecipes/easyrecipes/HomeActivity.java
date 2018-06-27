@@ -133,16 +133,15 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_alimentacao_saudavel) {
             selectedCategory = Category.ALIMENTACAO_SAUDAVEL;
         } else if (id == R.id.nav_localizacao) {
-
+            Intent startMaps = new Intent(HomeActivity.this, MapsActivity.class);
+            startActivity(startMaps);
         }
 
-        if (selectedCategory == null) {
-            // abrir activity do google maps
-        } else {
-            Intent startCategoryActivity = new Intent(HomeActivity.this, CategoryActivity.class);
-            startCategoryActivity.putExtra("category", selectedCategory);
-            startActivity(startCategoryActivity);
-        }
+
+        Intent startCategoryActivity = new Intent(HomeActivity.this, CategoryActivity.class);
+        startCategoryActivity.putExtra("category", selectedCategory);
+        startActivity(startCategoryActivity);
+
 
 
 

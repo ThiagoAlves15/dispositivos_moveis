@@ -218,18 +218,17 @@ public class CategoryActivity extends AppCompatActivity
         } else if (id == R.id.nav_alimentacao_saudavel) {
             selectedCategory = Category.ALIMENTACAO_SAUDAVEL;
         } else if (id == R.id.nav_localizacao) {
-
+            Intent startMaps = new Intent(CategoryActivity.this, MapsActivity.class);
+            startActivity(startMaps);
         }
 
-        if (selectedCategory == null) {
-            // abrir activity do google maps
-        } else {
-            if (selectedCategory != actualCategory) {
-                Intent startCategoryActivity = new Intent(CategoryActivity.this, CategoryActivity.class);
-                startCategoryActivity.putExtra("category", selectedCategory);
-                startActivity(startCategoryActivity);
-            }
+
+        if (selectedCategory != actualCategory) {
+            Intent startCategoryActivity = new Intent(CategoryActivity.this, CategoryActivity.class);
+            startCategoryActivity.putExtra("category", selectedCategory);
+            startActivity(startCategoryActivity);
         }
+
 
 
 
