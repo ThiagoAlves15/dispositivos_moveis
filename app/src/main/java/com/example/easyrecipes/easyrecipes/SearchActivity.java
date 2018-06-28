@@ -22,7 +22,7 @@ import java.util.List;
 public class SearchActivity extends AppCompatActivity {
 
     private ConstraintLayout contentSearch;
-    EditText editTextSearch;
+    private EditText editTextSearch;
     private TextView txtSearchFor;
     private TextView txtFoundedQtt;
     private Button btnNext;
@@ -75,7 +75,7 @@ public class SearchActivity extends AppCompatActivity {
 
     }
 
-    public void search(String keywords, int page) {
+    private void search(String keywords, int page) {
         clearView();
         MyConnection connection = new MyConnection();
         SearchPageContext spc;
