@@ -45,8 +45,7 @@ public class CategoryActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Put search action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startSearch();
             }
         });
 
@@ -63,6 +62,11 @@ public class CategoryActivity extends AppCompatActivity
 
 
 
+    }
+
+    private void startSearch() {
+        Intent startSearch = new Intent(CategoryActivity.this, SearchActivity.class);
+        startActivity(startSearch);
     }
 
     private void loadCategoryPage() {
