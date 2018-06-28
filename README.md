@@ -15,7 +15,7 @@ https://fatecsjc-android.slack.com/
 
 ![alt text](https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print_EasyRecipes_Categories.jpg)
 
-![alt text](https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print_EasyRecipes_Cat Bolo.jpg)
+![alt text](https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print_EasyRecipes_Cat_Bolo.jpg)
 
 ![alt text](https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print_EasyRecipes_Search1.jpg)
 
