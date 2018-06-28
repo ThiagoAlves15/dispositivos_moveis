@@ -7,7 +7,7 @@ https://fatecsjc-android.slack.com/
 
 ## Diagrama de classe:
 
-![alt text](https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Business%20Concept%20Diagram.jpg)
+![alt text](https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/diagrclasse.png)
 
 ## Prints:
 
