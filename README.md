@@ -7,7 +7,7 @@ https://fatecsjc-android.slack.com/
 
 ## Diagrama de classe:
 
-![alt text](https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/diagrclasse.png)
+![alt text](https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/ClassDiagram.png)
 
 ## Prints:
 
