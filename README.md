@@ -11,12 +11,12 @@ https://fatecsjc-android.slack.com/
 
 ## Prints:
 
-![alt text](https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Screenshot_2018-04-22-23-02-43_1.jpg)
+![alt text]("https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print_EasyRecipes_Home.jpg")
 
-![alt text](https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Screenshot_2018-04-22-22-27-49_1.jpg)
+![alt text]("https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print_EasyRecipes_Categories.jpg")
 
-![alt text](https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Screenshot_2018-04-22-22-27-53_1.jpg)
+![alt text]("https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print_EasyRecipes_Cat Bolo.jpg")
 
-![alt text](https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Screenshot_2018-04-22-22-28-03_1.jpg)
+![alt text]("https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print_EasyRecipes_Search1.jpg")
 
-![alt text](https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Screenshot_2018-04-22-22-28-05_1.jpg)
+![alt text]("https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print_EasyRecipes_Search2.jpg")
