@@ -69,13 +69,10 @@ public class CategoryActivity extends AppCompatActivity
         Category category = (Category) getIntent().getSerializableExtra("category");
         actualCategory = category;
         MyConnection connection = new MyConnection();
-        Map<String, List<RecipePresentation>> rpMap = connection.getCategoryRecipes(category);
+        List<RecipePresentation> moreHighlightsRPList = connection.getCategoryRecipes(category);
 
         contentCategory = (ConstraintLayout) findViewById(R.id.content_category);
         lastId = R.id.txt_cat_more_highlights;
-
-        List<RecipePresentation> moreHighlightsRPList = rpMap.get("moreHighlights");
-        List<RecipePresentation> mostViewedRPList = rpMap.get("mostViewed");
 
         TextView txtCategoryName = (TextView) findViewById(R.id.txt_category_name);
         txtCategoryName.setText(category.getCategoryName());
@@ -90,9 +87,6 @@ public class CategoryActivity extends AppCompatActivity
         constraintSet.applyTo(contentCategory);
         lastId = R.id.txt_cat_most_viewed;
 
-        for (RecipePresentation rp : mostViewedRPList) {
-            insertRPToContentView(rp);
-        }
     }
 
     private void insertRPToContentView(RecipePresentation rp) {
