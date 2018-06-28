@@ -11,12 +11,12 @@ https://fatecsjc-android.slack.com/
 
 ## Prints:
 
-![alt text](https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print - EasyRecipes - Home.jpg)
+![alt text]("https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print - EasyRecipes - Home.jpg")
 
-![alt text](https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print - EasyRecipes - Categories.jpg)
+![alt text]("https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print - EasyRecipes - Categories.jpg")
 
-![alt text](https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print - EasyRecipes - Cat Bolo.jpg)
+![alt text]("https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print - EasyRecipes - Cat Bolo.jpg")
 
-![alt text](https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print - EasyRecipes - Search1.jpg)
+![alt text]("https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print - EasyRecipes - Search1.jpg")
 
-![alt text](https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print - EasyRecipes - Search2.jpg)
+![alt text]("https://github.com/ThiagoAlves15/dispositivos_moveis/blob/master/DiagramAndPrints/Print - EasyRecipes - Search2.jpg")
