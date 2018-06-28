@@ -84,6 +84,7 @@ public class CategoryActivity extends AppCompatActivity
         for (RecipePresentation rp : moreHighlightsRPList) {
             insertRPToContentView(rp);
         }
+
     }
 
     private void insertRPToContentView(RecipePresentation rp) {

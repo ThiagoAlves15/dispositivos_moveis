@@ -2,6 +2,7 @@ package com.example.easyrecipes.easyrecipes;
 
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
+import android.support.constraint.ConstraintSet;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -75,6 +76,7 @@ public class SearchActivity extends AppCompatActivity {
     }
 
     public void search(String keywords, int page) {
+        clearView();
         MyConnection connection = new MyConnection();
         SearchPageContext spc;
         if (page == 1) { spc = connection.searchRecipe(keywords); }
@@ -101,13 +103,20 @@ public class SearchActivity extends AppCompatActivity {
             if (spc.hasNext()) { btnNext.setVisibility(View.VISIBLE); }
                 else { btnNext.setVisibility(View.GONE); }
         }
+        int lastId = newIds.get(newIds.size()-1);
+        ConstraintSet constraintSet = new ConstraintSet();
+        constraintSet.clone(contentSearch);
+        constraintSet.connect(R.id.btn_next_page, ConstraintSet.TOP, lastId, ConstraintSet.BOTTOM, 8);
+        constraintSet.connect(R.id.btn_prev_page, ConstraintSet.TOP, lastId, ConstraintSet.BOTTOM, 8);
+        constraintSet.applyTo(contentSearch);
     }
 
 
 
     private void clearView() {
         // remove not found, and previous RP
-        // set invisible: btnNext, prev, txtFounded, txtSearchFor
+        // set invisible: btnNext, prev, txtFounded,
+        //
         if (newIds != null && !newIds.isEmpty()) {
             txtFoundedQtt.setVisibility(View.GONE);
             txtSearchFor.setVisibility(View.GONE);
