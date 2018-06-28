@@ -16,9 +16,9 @@ import java.util.Map;
 
 public class MyConnection {
 
-    public Map<String, List<RecipePresentation>> getCategoryRecipes(Category category) {
+    public List<RecipePresentation> getCategoryRecipes(Category category) {
         String url = "http://www.tudogostoso.com.br/categorias/" + category.getCategoryUrlString();
-        Map<String, List<RecipePresentation>> rpMap = new HashMap<>();
+        List<RecipePresentation> rpList = new ArrayList<>();
 
         try {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -27,28 +27,18 @@ public class MyConnection {
             Document document = Jsoup.connect(url).userAgent("Mozilla").get();
             Element body = document.select("body").first();
             Elements moreHighlightsRPDivs = body.select("div.more-highlights").select("div.box.box-hover");
-            Elements mostViewedRPDivs = body.select("div.most-viewed").select("div.box-box-small");
             List<Element> aTagsMoreHighlights = new ArrayList<>();
-            List<Element> aTagsMostViewed = new ArrayList<>();
             for (Element e : moreHighlightsRPDivs) {
                 aTagsMoreHighlights.add(e.select("a").first());
             }
-            for (Element e : mostViewedRPDivs) {
-                aTagsMostViewed.add(e.select("a").first());
-            }
 
-            List<RecipePresentation> moreHighlightsRPList = getRPFromATags(aTagsMoreHighlights);
-            List<RecipePresentation> mostViewedRPList = getRPFromATags(aTagsMostViewed);
-
-            rpMap.put("moreHighlights", moreHighlightsRPList);
-            rpMap.put("mostViewed", mostViewedRPList);
-
+            rpList = getRPFromATags(aTagsMoreHighlights);
 
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        return rpMap;
+        return rpList;
     }
 
     public Map<String, List<RecipePresentation>> getHomeRP() {
