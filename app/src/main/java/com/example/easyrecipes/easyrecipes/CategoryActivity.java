@@ -84,13 +84,6 @@ public class CategoryActivity extends AppCompatActivity
         for (RecipePresentation rp : moreHighlightsRPList) {
             insertRPToContentView(rp);
         }
-
-        ConstraintSet constraintSet = new ConstraintSet();
-        constraintSet.clone(contentCategory);
-        constraintSet.connect(R.id.txt_cat_most_viewed, ConstraintSet.TOP, lastId, ConstraintSet.BOTTOM, 30);
-        constraintSet.applyTo(contentCategory);
-        lastId = R.id.txt_cat_most_viewed;
-
     }
 
     private void insertRPToContentView(RecipePresentation rp) {
