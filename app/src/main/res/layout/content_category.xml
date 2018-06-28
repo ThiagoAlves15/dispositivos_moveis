@@ -44,16 +44,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_category_name" />
 
-    <TextView
-        android:id="@+id/txt_cat_most_viewed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/mais_vistas"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_more_highlights" />
-    </android.support.constraint.ConstraintLayout>
+
 </ScrollView>
